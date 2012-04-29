@@ -1,1 +1,25 @@
-= link_to "Cygni", root_path, :class => 'brand'
+= link_to "cygni", root_path, :class => 'brand'
+
+%ul.nav.pull-right
+  - if signed_in?
+    %li.dropdown
+      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+        = current_user.name
+        %b.caret
+      %ul.dropdown-menu
+        %li= link_to "Dashboard", user_path(current_user)
+        %li= link_to "Log Out", logout_path
+  - else
+    %li.dropdown
+      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+        Log In
+        %b.caret
+      %ul.dropdown-menu
+        %li= link_to "Facebook", login_path(:provider => "facebook")
+        %li= link_to "Twitter", login_path(:provider => "twitter")
+        %li= link_to "Google", login_path(:provider => "google_oauth2")
+        %li= link_to "GitHub", login_path(:provider => "github")
+        %li= link_to "Dropbox", login_path(:provider => "dropbox")
+        %li= link_to "Rdio", login_path(:provider => "rdio")
+        %li= link_to "Foursquare", login_path(:provider => "foursquare")
+        %li= link_to "Instagram", login_path(:provider => "instagram")

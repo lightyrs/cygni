@@ -4,3 +4,15 @@ $iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
 @import "bootstrap";
 body { padding-top: 60px; }
 @import "bootstrap-responsive";
+
+// cygni
+.table {
+  word-wrap: break-word;
+  margin-top: 5px;
+  margin-bottom: 18px;
+
+  thead {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
