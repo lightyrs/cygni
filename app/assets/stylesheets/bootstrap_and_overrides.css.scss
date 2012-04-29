@@ -6,6 +6,29 @@ body { padding-top: 60px; }
 @import "bootstrap-responsive";
 
 // cygni
+header {
+
+	&.navbar-fixed-top {
+
+    .navbar-inner {
+      background: transparent image_url('/assets/textures/blue_stitched.png') repeat-x;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: 0 0;
+      -moz-box-shadow: 0 0;
+      box-shadow: 0 0;
+
+      .brand {
+        padding: 0 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+      }
+    } 
+  }	
+}
+
 .table {
   word-wrap: break-word;
   margin-top: 5px;

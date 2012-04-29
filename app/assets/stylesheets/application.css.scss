@@ -13,10 +13,7 @@
 */
 
 body {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(240, 240, 240, 0.4)), to(rgba(250, 250, 250, 0.7)));
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.9)), to(rgba(10, 10, 10, 0.7)));
-  background-image: image_url('/assets/patterns/carbon_fibre.png');
-  background-repeat: repeat;
+  background: #f2f3f3 image_url('/assets/patterns/cloth.png') repeat;
 }
 
 .content {
