@@ -11,22 +11,28 @@ header {
 	&.navbar-fixed-top {
 
     .navbar-inner {
-      background: transparent image_url('/assets/textures/blue_stitched.png') repeat-x;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0;
-      -webkit-box-shadow: 0 0;
-      -moz-box-shadow: 0 0;
-      box-shadow: 0 0;
+      padding: 9px 0;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.67), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.67), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.67), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 
       .brand {
+        color: black;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        transition: all .2s linear;
         padding: 0 20px;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 36px;
+        font-size: 34px;
         font-weight: bold;
       }
     } 
   }	
+}
+
+.navbar .nav > li > a {
+  font-size: 16px;
 }
 
 .table {

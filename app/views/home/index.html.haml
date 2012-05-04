@@ -1,1 +1,9 @@
-%h1 cygni
+#providers
+  = link_to "Facebook", login_path(:provider => "facebook"), :class => "facebook"
+  = link_to "Twitter", login_path(:provider => "twitter"), :class => "twitter"
+  = link_to "Google", login_path(:provider => "google_oauth2"), :class => "google_oauth2"
+  = link_to "GitHub", login_path(:provider => "github"), :class => "github"
+  = link_to "Dropbox", login_path(:provider => "dropbox"), :class => "dropbox"
+  = link_to "Rdio", login_path(:provider => "rdio"), :class => "rdio"
+  = link_to "Foursquare", login_path(:provider => "foursquare"), :class => "foursquare"
+  = link_to "Instagram", login_path(:provider => "instagram"), :class => "instagram"
