@@ -11,11 +11,12 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
     = yield(:head)
-  %body{:class => body_class}
+  %body.cygni{:class => body_class}
     %header.navbar.navbar-fixed-top
       %nav.navbar-inner
         .container
           = render 'layouts/navigation'
+      %nav.subnav.shiny.black
     #main{:role => "main"}
       .container
         .content
